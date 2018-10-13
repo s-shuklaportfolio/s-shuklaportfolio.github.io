@@ -70,40 +70,10 @@
            
            <h1> view </h1>
            
-                    <?php $i=1;
-                    foreach($this->Chemist_model->getchemist() as $sp)
-                    {?>
-
-                    <tr>
-                    <td>
-                    <?php echo $i++; ?>
-                    </td>
-
-                     <td><?php echo $this->User_model->getval("state","state_id",$sp->state,"state_name")?></td>
-                    <td><?php echo $this->User_model->getval("headquarter","headquarter_id",$sp->headquarter,"headquarter_name")?></td>
-                    <td><?php echo $this->User_model->getval("city","city_id",$sp->city,"city_name")?></td>
-                    <td><?php echo $this->User_model->getval("area","area_id",$sp->area_name,"area_name")?></td>
-                    <td><?php echo $sp->chemistname?></td>
-                    <td><?php echo $sp->address?></td>
-                    <td><?php echo $sp->mob?></td>
-                    <td><?php echo $sp->phoneno?></td>
-                    <td><?php echo $sp->status?></td>
-
-                    <td>
-                    <div class="hidden-sm hidden-xs action-buttons">
-                    <a class="green" href="<?php echo base_url();?>index.php/chemist/chemist/editchemist/<?php echo $sp->chemist_id; ?>">
-                    <i class="ace-icon fa fa-pencil bigger-130"></i>
-                    </a>
-                    <a class="red" href="<?php echo base_url();?>index.php/state/deletechemist/<?php echo $sp->chemist_id; ?>">
-                    <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                    </a>
-                    </div>
-                    </td>
-
-
+                   
            
            
-           "</pre>
+           
            </section>
        <section class="row portfoliosection" id="about">
            <article class="sec-header">
